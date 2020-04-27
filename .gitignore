@@ -33,5 +33,6 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Environment variables
+# Security Sensitive Variables
 .env
+ormconfig.json
