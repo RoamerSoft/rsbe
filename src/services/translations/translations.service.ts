@@ -17,6 +17,12 @@ export class TranslationsService {
     });
   }
 
+  public async getTranslationByLanguage(lang: string) {
+    return await this.connection.transaction(async manager => {
+      return await manager.findOne(Translation, { where: { language: lang } });
+    });
+  }
+
   public async addTranslations() {
     const nl = new Translation();
     nl.language = 'nl';
