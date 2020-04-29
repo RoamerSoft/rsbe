@@ -22,7 +22,7 @@ export class TranslationsController {
       });
   }
 
-  @Get('add')
+  @Get('add/translations')
   async addTranslations() {
     return await this.translationsService.addTranslations();
   }

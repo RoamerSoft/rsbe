@@ -17,7 +17,7 @@ services:
     container_name: rsbe
     restart: always
     ports:
-      - 443:3000
+      - 3000:3000
   database:
     image: postgres:alpine
     volumes:
