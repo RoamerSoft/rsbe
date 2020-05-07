@@ -39,7 +39,8 @@ export class TranslationsService {
       "Do you need a Mobile App which runs on both Android and Apple iOS? Or do you need an application to improve your business process efficiency? Or maybe a Website or Web Shop to get your name out and raise sales?": "Heeft u een mobile app nodig die zowel op Android als Apple iOS draait? Of bent u opzoek naar die applicatie die de efficiëntie van uw bedrijfsprocessen bevordert.  Of misschien een website of webshop om uw naamsbekendheid te vergroten en verkopen te stimuleren?",
       "Whether it is a Mobile App, an advanced web application, a website or Web shop. I create the application which suits your needs, an application of the highest quality and which runs smoothly and exactly the same on all devices.": "Of het nu gaat om een mobiele app, een geavanceerde webapplicatie, een website of webshop. Ik maak de applicatie welke past bij uw te behalen doel. Een applicatie van de hoogste kwaliteit welke te gebruiken is op alle apparaten.",
       "More about my services": "Meer over mijn diensten"
-    };
+    }
+    ;
 
     const en = new Translation();
     en.language = 'en';
