@@ -38,6 +38,7 @@ WORKDIR /usr/src/app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
+COPY ormconfig.json ./
 RUN npm install --only=production
 
 # Copy only the needed files from the build
