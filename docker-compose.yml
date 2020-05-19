@@ -29,8 +29,9 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     restart: always
-    ports:
-      - 9000:5432
+    # Unnecessary on production.
+    # ports:
+    #   - 9000:5432
 
 volumes:
   data:
