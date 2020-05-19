@@ -1,10 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { RecaptchaResponse } from 'src/models/recaptcha-response/recaptcha-response';
+import * as Request from 'request';
 
 @Injectable()
 export class RecaptchaService {
-  // Using request instead of HttpService because Google didn't receives the data.
-  private request = require('request');
   private secret = process.env.RECAPTCHA_SECRET;
 
   public checkToken(token): Promise<RecaptchaResponse> {
@@ -18,7 +17,7 @@ export class RecaptchaService {
           response: token,
         },
       };
-      this.request(options, (error, response) => {
+      Request(options, (error, response) => {
         const recaptchaResponse = JSON.parse(
           response.body,
         ) as RecaptchaResponse;
