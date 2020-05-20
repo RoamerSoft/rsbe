@@ -19,7 +19,6 @@ export class ContactController {
       if (res.score > 0.5) {
         // Create the email
         const mail = new Mail();
-        mail.from = '"RoamerSoft.com" <noreply@roamersoft.com>';
         mail.from = `"${contactForm.name}" <${contactForm.email}>`;
         mail.to = '"RoamerSoft" <info@roamersoft.com>';
         mail.subject = 'Contact Form Message';
