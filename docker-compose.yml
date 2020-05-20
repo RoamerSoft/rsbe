@@ -15,6 +15,10 @@ services:
       dockerfile: Dockerfile
     image: backend:roamersoft
     container_name: rsbe
+    environment: 
+      RECAPTCHA_SECRET: ${RECAPTCHA_SECRET}
+      EMAIL_USER: ${EMAIL_USER}
+      EMAIL_PASSWORD: ${EMAIL_PASSWORD}
     restart: always
     ports:
       - 3000:3000
